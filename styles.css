@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .fullcontainer
+  {
+    background-color: #D7FDC4;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right:0;
+    
+  }
+  a
+  {
+    text-decoration: none;
+  }
+  
+  body{
+    min-height: 100vh;
+    background-position: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .container
+  {
+    display: flex;
+    height: 60px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .container .search_bar
+  {
+    
+    height: 100%;
+    flex: 1;
+    max-width: 400px;
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    
+  }
+  .search_bar input
+  {
+    width: 100%;
+    height: 69%;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 1px 1px 5px 1.3px rgba(0, 0, 0, 0.3);
+    
+  }
+  input::placeholder
+  {
+   padding-left: 13px;
+  }
+
+  .search_bar :last-child
+  {
+    margin-left: -40px;
+  }
+  .container .leftheader
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .leftheader :first-child
+  {
+    margin: 0px 18px 0px 16px;
+  }
+  .container .rightheader
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .rightheader :last-child
+  {
+    margin: 0px 16px 0px 18px;
+  }
+  
+  nav{
+    
+    box-shadow: 3px 3px 5px 1.3px rgba(0, 0, 0, 0.1);
+    border-bottom: 4px solid rgba(0, 0, 0, 0.3);
+  }
+  nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  nav li{
+    height: 50px;
+  }
+  nav a{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+  }
+  nav a:hover{
+    background-color: #f0f0f0;
+  }
+  .menu-button{
+    display: none;
+  }
+  @media(max-width: 415px){
+    .hideOnMobile{
+      display: none;
+    }
+    .menu-button{
+      display: block;
+    }
+  }
+  .aboutsection{
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    margin: 30px;
+  }
+  .aboutsection h1, .aboutsection h2 {
+    color: #333;
+  }
+  
+  .aboutsection p, .aboutsection ul {
+    color: #555;
+  }
+  
+  .aboutsection ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+  .aboutsection .services
+  {
+    padding: 20px;
+  }
