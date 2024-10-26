@@ -24,6 +24,7 @@
 
 .container1{
   margin-top: 115px;
+  /* overflow: auto; */
 }
 
 .filter{
@@ -44,7 +45,7 @@
   flex-wrap: wrap; */
   display: grid;
   grid-template-columns: repeat(auto-fit,minmax(500px,1fr));
-  overflow: auto;
+  /* overflow: auto; */
 }
 
 .land-container{
