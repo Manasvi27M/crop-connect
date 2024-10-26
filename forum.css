@@ -100,4 +100,71 @@ a
       --angle: 360deg;
     }
   }
- 
+  .tutorialmain
+  {
+      height: 100vh;
+      background-color: red;
+      display: flex;
+      position: relative;
+      margin-left: 300px;
+      padding: 25px;
+      
+  }
+  .t1
+  {
+      border: 3px solid black;
+      display: flex;
+      align-items: center;
+      justify-items: center;
+      height: 50%;
+      width: 500px;
+      position: relative;
+      flex-direction: column;
+      padding: 10px;
+      border-radius: 5px;
+  }
+  .video1
+  {
+      display: flex;
+      border: 3px solid black;
+      height: 90%;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      background-color: yellow;
+      border-radius: 10px;
+  }
+  .video1 #v1
+  {
+      height: 100%;
+      width: 100%;
+      border-radius: 5px;
+  }
+  .t1 .textarea1
+  {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 3px solid black;
+      height: 20%;
+      width: 100%;
+      position: relative;
+      top: 10px;
+      margin-top: 5px;
+      margin-bottom: 10px;
+      border-radius: 10px;
+  }
+  .textarea1 #t1
+  {
+      height: 100%;
+      width: 100%;
+      padding: 5px;
+      border-radius: 5px;
+      background-color: red;
+      
+  }
+  ::placeholder
+  {
+      color: black;
+  }
+  
