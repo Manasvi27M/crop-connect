@@ -21,6 +21,7 @@
     min-height: 100vh;
     background-position: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden;
   }
   .container
   {
