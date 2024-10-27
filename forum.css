@@ -18,9 +18,10 @@ body
     height: 100vh;
     width: 300px;
     align-items: center;
-    box-shadow: 5px 0px 15px rgba(0,0,0,0.3);
+    box-shadow: 5px 0px 15px rgba(0,0,0,0.5);
     position: fixed;
     border: 5px solid #D7FDC4;
+    z-index: 1;
 }
 
 a
@@ -100,71 +101,135 @@ a
       --angle: 360deg;
     }
   }
-  .tutorialmain
-  {
-      height: 100vh;
-      background-color: red;
-      display: flex;
-      position: relative;
-      margin-left: 300px;
-      padding: 25px;
-      
-  }
-  .t1
-  {
-      border: 3px solid black;
-      display: flex;
-      align-items: center;
-      justify-items: center;
-      height: 50%;
-      width: 500px;
-      position: relative;
-      flex-direction: column;
-      padding: 10px;
-      border-radius: 5px;
-  }
-  .video1
-  {
-      display: flex;
-      border: 3px solid black;
-      height: 90%;
-      width: 100%;
-      align-items: center;
-      justify-content: center;
-      background-color: yellow;
-      border-radius: 10px;
-  }
-  .video1 #v1
-  {
-      height: 100%;
-      width: 100%;
-      border-radius: 5px;
-  }
-  .t1 .textarea1
-  {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border: 3px solid black;
-      height: 20%;
-      width: 100%;
-      position: relative;
-      top: 10px;
-      margin-top: 5px;
-      margin-bottom: 10px;
-      border-radius: 10px;
-  }
-  .textarea1 #t1
-  {
-      height: 100%;
-      width: 100%;
-      padding: 5px;
-      border-radius: 5px;
-      background-color: red;
-      
-  }
-  ::placeholder
-  {
-      color: black;
-  }
-  
+  /* /* .tutorialmain {
+    height: 100vh;
+    background-color: #EBF8DD;
+    display: grid;
+    position: relative;
+    margin-left: 300px;
+    padding: 25px;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+}  */
+/* .t1, .t2, .t3, .t4 {
+    
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 5px;
+    height: 100%; 
+    box-shadow: 5px 0px 15px rgba(0,0,0,0.3);
+} */
+/* .video1, .video2, .video3, .video4 {
+    display: flex;
+    
+    height: 90%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: yellow;
+    border-radius: 10px;
+    border:none;
+    box-shadow: 5px 0px 15px rgba(0,0,0,0.3);
+} */
+/* .video1 #v1, .video2 #v2, .video3 #v3, .video4 #v4 {
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+} */
+/* .textarea1, .textarea2, .textarea3, .textarea4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    height: 20%;
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+} */
+/* #text1, #text2, #text3, #text4
+{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    background: #EBF8DD;
+} */
+.tutorialmain {
+    /* height: 100vh; */
+    background-color: #EBF8DD;
+    display: grid;
+    position: relative;
+    margin-left: 300px;
+    padding: 25px;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+}
+
+.t {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 5px;
+    height: 350px; 
+    box-shadow: 5px 0px 15px rgba(0,0,0,0.3);
+}
+
+.video {
+    display: flex;
+    
+    height: 90%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: yellow;
+    border-radius: 10px;
+    border:none;
+    box-shadow: 5px 0px 15px rgba(0,0,0,0.3);
+}
+
+.video iframe {
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.textarea {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20%;
+    width: 100%;
+    margin-top: 8px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.textarea input[type="text"] {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    background: #EBF8DD;
+    border:none;
+    box-shadow: 5px 0px 15px rgba(0,0,0,0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+::placeholder {
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10px;
+    font-family: "Playwrite GB S", cursive;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    letter-spacing: 2px;
+}
