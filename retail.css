@@ -35,6 +35,8 @@
   left: 0;
   background-color: aqua;
   border: 2px solid black;
+  display: flex;
+  flex-direction: column;
 }
 
 .main-land-container{
