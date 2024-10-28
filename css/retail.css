@@ -1,0 +1,113 @@
+:root{
+  --header-brg:rgb(36, 65, 38);
+  --header-txt:rgb(255, 255, 255);
+  --filetr-brg:rgb(150, 150, 150);
+  --primary-txt:white;
+  --primary-button-brg:rgb(154, 154, 36);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* .header{
+  height: 100px;
+  background-color: var(--header-brg);
+  color: var(--header-txt);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+} */
+
+.container1{
+  margin-top: 115px;
+  /* overflow: auto; */
+}
+
+.filter{
+  width: 250px;
+  position: fixed;
+  top: 115px;
+  bottom: 0;
+  left: 0;
+  background-color: aqua;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-land-container{
+  background-color: gray;
+  margin-left: 255px;
+  gap: 2px;
+  /* display: flex; 
+  flex-wrap: wrap; */
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(500px,1fr));
+  /* overflow: auto; */
+}
+
+.land-container{
+  /* height: 350px; */
+  box-sizing: border-box;
+  background-color: green;
+  /* display: flex;
+  flex-direction: column; */
+  padding: 8px;
+}
+
+.land-name{
+  display: block;
+  padding-top: 10px;
+  background-color: rgb(162, 158, 158);
+  height: 50px;
+  padding-left: 20px;
+}
+
+.product-details-container{
+  margin-top: 5px;
+  display: flex;
+  background-color: rgb(162, 158, 158);
+  padding: 5px;
+  height: 300px;
+}
+
+.land-image{
+  flex: 1;
+  align-self: center;
+  justify-self: center;
+}
+
+.land-image img{
+ height: 200px;
+ width: 100%;
+}
+
+.abstract-details-container{
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  flex: 1;  
+}
+
+.data{
+  display: flex;
+  justify-content: space-around;
+  padding: 5px;
+}
+
+.data div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#data1{
+  border-bottom: 2px solid black;
+}
+
+
