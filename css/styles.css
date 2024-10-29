@@ -136,7 +136,7 @@
   }
   
   .aboutsection ul {
-    list-style-type: disc;
+    list-style-type: none;
     margin-left: 20px;
   }
   .aboutsection .services
