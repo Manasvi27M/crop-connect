@@ -1,0 +1,23 @@
+.aboutsection{
+  text-align: center;
+  padding: 20px;
+  background-color: #dddddd;
+  border-radius: 8px;
+  margin: 30px;
+}
+.aboutsection h1, .aboutsection h2 {
+  color: #333;
+}
+
+.aboutsection p, .aboutsection ul {
+  color: #555;
+}
+
+.aboutsection ul {
+  list-style-type: none;
+  margin-left: 20px;
+}
+.aboutsection .services
+{
+  padding: 20px;
+}
