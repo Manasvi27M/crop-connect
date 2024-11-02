@@ -21,6 +21,7 @@ body{
     width: 500px;
     height: 500px;
     padding: 30px;
+    margin-top: 300px;
   }
 
   .loginheader{
@@ -28,7 +29,7 @@ body{
     margin: 20px 0 40px 0;
   }
 
-  .loginheader header{
+  .loginheader .headerdiv{
     color:darkgreen;
     font-size: 30px;
     font-weight: 600;

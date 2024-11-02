@@ -5,12 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/login.css">
     <title>Login</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" 
+  integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" 
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <<script>
+    $(document).ready(function(){
+        $(".loginheader").load("header.html");
+    });
+</script>
 </head>
 <body>
     <div class="loginbox">
         <form action="#">
         <div class="loginheader">
-            <header>Login</header>
+            <div class="headerdiv">Login</div>
         </div>
         <div class="inputbox">
             <input type="text" class="inputfield" placeholder="username" autocomplete="off" required>
