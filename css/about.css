@@ -1,9 +1,10 @@
 .aboutsection{
   text-align: center;
   padding: 20px;
-  background-color: #dddddd;
+  background-color: #D7FDC4;
   border-radius: 8px;
   margin: 30px;
+  margin-top: 150px;
 }
 .aboutsection h1, .aboutsection h2 {
   color: #333;
