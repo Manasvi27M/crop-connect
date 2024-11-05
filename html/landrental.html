@@ -20,7 +20,7 @@
       <div class="filter-container">
         <h2>Filter</h2>
         <form id="filterForm">
-          <label for="location">Location:</label>
+          <label for="location">Location :</label>
           <select id="location" name="location">
             <option value="">Select Location</option>
             <option value="bengaluru">bengaluru</option>
@@ -29,20 +29,30 @@
             <option value="chikamagaluru">chikamagaluru</option>
           </select>
 
-          <label for="priceRange">Price Range:</label>
-          <div class="price-input">
-            <div>min price - 0rs</div>
-            <div>max price - 1000000rs</div>
+          <label>Price Range :</label>
+          <div class="min-max-container">
+            <div class="input-field">
+              <div class="min">min</div>
+              <input type="number" value="20000">
+            </div>
+            <div class="middle">-</div>
+            <div class="input-field">
+              <div class="max">max</div>
+              <input type="number" value="90000">
+            </div>
           </div>
-          <div class="slider-container">
-            <input type="range" id="minRange" min="0" max="10000000" value="0">
-            <!-- <input type="range" id="maxRange" min="0" max="10000000" value="10000000"> -->
+          <div class="slider">
+            <div class="progress"></div>
+          </div>
+          <div class="range-container">
+            <input class="min" type="range" max="500000" value="100000">
+            <input class="max" type="range" max="500000" value="390000">
           </div>
 
-          <label for="acres">Number of Acres:</label>
+          <label for="acres">Number of Acres :</label>
           <input type="number" id="acres" name="acres">
 
-          <label for="type">Land Type:</label>
+          <label for="type">Land Type :</label>
           <select id="type" name="type">
             <option value="">Any</option>
             <option value="farmland">Farmland</option>
@@ -187,5 +197,6 @@
       <script>
         $('.header_container').load('header.html');
       </script>
+      <script src="/js/land_rental.js"></script>
 </body>
 </html>

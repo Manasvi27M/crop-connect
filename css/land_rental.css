@@ -27,7 +27,7 @@
 }
 
 .main-land-container{
-  margin: 15px 15px 15px 265px;
+  margin: 15px 15px 15px 285px;
   gap: 15px;
   /* display: flex; 
   flex-wrap: wrap; */
@@ -133,18 +133,19 @@
 }
 
 .filter-container{
-  width: 250px;
+  width: 270px;
   position: fixed;
   top: 115px;
   bottom: 0;
   left: 0;
   /* border: 2px solid black; */
-  padding: 20px;
+  padding: 15px;
   display: flex;
   flex-direction: column;
   gap: 10px;
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
-  background-color: #aeaeae;
+  background-color: #c6c6c6;
+  border-radius: 0px 10px 0px 0px;
 }
 
 /* .filter-container {
@@ -164,11 +165,13 @@ label {
   display: block;
 }
 
-input[type='text'], input[type='number'], select {
+ input[type='text'], input[type='number'], select {
   width: 100%;
   padding: 8px;
   margin-top: 5px;
 }
+
+/*
 
 input[type='range'] {
   width: 100%;
@@ -182,7 +185,80 @@ input[type='range'] {
 .slider-container {
   display: flex;
   flex-direction: column;
+} */
+
+form{
+  font-size: 17px;
+  font-weight: 450;
 }
+
+.min-max-container{
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+.input-field{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.input-field input{
+  width: 70px;
+}
+
+.input-field input::-webkit-inner-spin-button,
+.input-field input::-webkit-outer-spin-button
+{
+  -webkit-appearance: none;
+}
+
+.middle{
+  font-weight: 700;
+}
+
+.slider{
+  margin-top: 20px;
+  height: 7px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  position: relative;
+}
+
+.progress{
+  position: absolute;
+  background-color: rgb(34, 146, 183);
+  left: 25%;
+  right: 25%;
+  height: 7px;
+  border-radius: 5px;
+  top: 0;
+}
+
+.range-container{
+  position: relative;
+}
+
+.range-container input{
+  position: absolute;
+  top: -13px;
+  width: 100%;
+  background: none;
+  pointer-events: none;
+  -webkit-appearance: none;
+  height: 7px;
+}
+
+input[type="range"]::-webkit-slider-thumb{
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  pointer-events: auto;
+  -webkit-appearance: none;
+  background-color: rgb(34, 146, 183);
+}
+
 
 .filter-button {
   width: 100%;
