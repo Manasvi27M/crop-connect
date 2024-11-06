@@ -247,6 +247,7 @@ form{
   background: none;
   pointer-events: none;
   -webkit-appearance: none;
+  appearance: none;
   height: 7px;
 }
 
