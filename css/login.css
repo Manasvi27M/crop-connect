@@ -21,8 +21,8 @@ body{
     width: 500px;
     height: 500px;
     padding: 30px;
-    margin-top: 300px;
-  }
+    /* margin-top: 300px; */
+  } 
 
   .loginheader{
     text-align: center;
