@@ -1,18 +1,42 @@
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
+    margin-top: 150px;
     padding: 0;
     background-color: #f1f1f1;
 }
+@property --angle{
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+  }
 
-.header {
+/* .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
     background-color: #2874f0;
     color: white;
-}
+} */
+
+
+/* @keyframes rotateGradient {
+    0% {
+        background: linear-gradient(0deg, #70f570, #49c628);
+    }
+    25% {
+        background: linear-gradient(90deg, #70f570, #49c628);
+    }
+    50% {
+        background: linear-gradient(180deg, #70f570, #49c628);
+    }
+    75% {
+        background: linear-gradient(270deg, #70f570, #49c628);
+    }
+    100% {
+        background: linear-gradient(360deg, #70f570, #49c628);
+    }
+} */
 
 .logo {
     font-size: 24px;
@@ -31,17 +55,76 @@ body {
 
 .main-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding: 20px;
     gap: 20px;
 }
 
 .cart-container, .price-details {
-    background-color: white;
+    background-color: #D7FDC4;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    
 }
+
+/* .cart-container::before, .price-details::before {
+    content: '';
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    right: -3px;
+    bottom: -3px;
+    background: linear-gradient(0deg, #70f570, #49c628);
+    z-index: -1;
+    border-radius: 10px;
+    animation: rotateGradient 5s linear infinite;
+    filter: blur(15px);
+    transition: opacity 1.5s ease-in-out;
+} */
+.cart-container::after, .cart-container::before, .price-details::after, .price-details::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    padding: 1.5px;
+    translate: -50% -50% ;
+    background-image: conic-gradient(from var(--angle),#70f570, #49c628);
+    z-index:-1;
+    border-radius: 10px;
+    animation: 3s spin linear infinite;
+}
+
+/* .cart-container::before, .price-details::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50% ;
+    background-image: conic-gradient(0deg, #70f570, #49c628);
+    z-index: -1;
+    border-radius: 10px;
+} */
+
+.cart-container::before, .price-details::before {
+    filter: blur(1.5rem);
+    opacity: 0.5;
+}
+@keyframes spin{
+    from{
+      --angle: 0deg;
+    }
+    to{
+      --angle: 360deg;
+    }
+  }
+
+
 
 .cart-container {
     width: 60%;
