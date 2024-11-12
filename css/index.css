@@ -1,0 +1,149 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #2874f0;
+    color: white;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.search-input {
+    width: 50%;
+    padding: 5px;
+    font-size: 16px;
+}
+
+.user-name {
+    font-size: 18px;
+}
+
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 20px;
+}
+
+.cart-container, .price-details {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.cart-container {
+    width: 60%;
+}
+
+.price-details {
+    width: 30%;
+    height: fit-content;
+}
+
+/* .cart-header {
+    display: flex;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+} */
+.cart-header {
+    display: flex;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+.cart-header .tab {
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.cart-header .tab:first-child {
+    border-right: 1px solid #ccc;
+}
+
+.cart-header .tab:hover {
+    background-color: #f1f1f1;
+}
+
+.tab {
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.tab:hover {
+    background-color: #f1f1f1;
+}
+
+.item-box {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.item img {
+    width: 80px;
+    margin-right: 20px;
+}
+
+.item-details {
+    flex: 1;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.actions button {
+    padding: 5px 10px;
+}
+
+.out-of-stock {
+    color: red;
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+.place-order {
+    width: 100%;
+    padding: 10px;
+    background-color: #ff9f00;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 18px;
+    cursor: not-allowed;
+}
+
+.price-details h2 {
+    margin-bottom: 20px;
+}
+
+.price-item, .total-amount {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.total-amount {
+    font-weight: bold;
+    font-size: 18px;
+}
