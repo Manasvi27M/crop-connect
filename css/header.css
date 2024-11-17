@@ -82,6 +82,15 @@
   {
     margin: 0px 16px 0px 18px;
   }
+
+  .container img,svg{
+    cursor: pointer;
+  }
+
+  .search_bar input{
+    outline: none;
+    padding-left: 20px;
+  }
   
   nav{
     
