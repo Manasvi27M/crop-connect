@@ -1,0 +1,120 @@
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.main-container{
+  margin-top: 115px;
+  background-color: rgb(134, 69, 109);
+  height: auto;
+}
+
+.land_name{
+  height: 60px;
+  padding: 5px;
+}
+
+.abstract_details{
+  display: flex;
+}
+
+.some_information{
+  margin-bottom: 10px;
+  height: 30px;
+}
+
+.image_container{
+  position: relative;
+  background-color: aquamarine;
+  flex: 1;
+  min-width: 400px;
+  max-width: 800px;
+  min-height: 100px;
+  max-height: 450px;
+  padding: 15px;
+}
+
+.image_container svg{
+  z-index: 10;
+  position: absolute;
+  top: 30px;
+  right: 50px;
+  padding: 7px;
+  height: 40px;
+  width: 40px;
+  border-radius: 30%;
+}
+
+
+
+.image_container svg:hover{
+  background-color: rgb(224, 224, 224);
+}
+
+.swiper{
+  height: 100%;
+  width: 100%;
+}
+
+.basic_landdetails{
+  /* max-height: 500px; */
+  margin-left: 10px;
+  flex: 1;
+  display: flex;
+  padding: 15px 0px;
+  flex-direction: column;
+  align-items: center;
+  background-color: chartreuse;
+  gap: 2px;
+}
+
+.details_templates{
+  flex: 1;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  background-color: brown;
+
+}
+
+.data_box{
+  display: flex;
+  height: 100px;
+  background-color: aqua;
+  width: 300px;
+  align-items: center;
+  justify-content: center;
+}
+
+.icons_img{
+  width: 80px;
+  height: 100%;
+  flex-shrink: 0;
+  background-color: blue;
+}
+
+.data{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: rgb(69, 169, 29);
+  align-items: center;
+}
+
+/* .data div{
+  padding: 10px;
+} */
+
+.addtocart{
+  margin-top: 15px;
+  padding: 10px 50px ;
+  margin-bottom: 20px;
+}
+
+.owner_details{
+ background-color: bisque;
+ height: 250px;
+ margin-bottom: 500px;
+}
