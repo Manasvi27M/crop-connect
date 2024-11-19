@@ -12,15 +12,14 @@
 .land_name{
   height: 60px;
   padding: 5px;
+  text-align: center;
+  padding-top: 15px;
+  font-size: 20px;
+  font-weight: 500;
 }
 
 .abstract_details{
   display: flex;
-}
-
-.some_information{
-  margin-bottom: 10px;
-  height: 30px;
 }
 
 .image_container{
@@ -28,10 +27,11 @@
   background-color: aquamarine;
   flex: 1;
   min-width: 400px;
-  max-width: 800px;
+  max-width: 750px;
   min-height: 100px;
-  max-height: 450px;
+  max-height: 430px;
   padding: 15px;
+  margin-left: 15px;
 }
 
 .image_container svg{
@@ -61,11 +61,11 @@
   margin-left: 10px;
   flex: 1;
   display: flex;
-  padding: 15px 0px;
+  padding: 5px 0px;
   flex-direction: column;
   align-items: center;
   background-color: chartreuse;
-  gap: 2px;
+  gap: 7px;
 }
 
 .details_templates{
@@ -79,7 +79,7 @@
 
 .data_box{
   display: flex;
-  height: 100px;
+  height: 85px;
   background-color: aqua;
   width: 300px;
   align-items: center;
@@ -108,13 +108,93 @@
 } */
 
 .addtocart{
-  margin-top: 15px;
+  margin-top: 10px;
   padding: 10px 50px ;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+}
+
+.owner_container{
+ background-color: bisque;
+ height: 270px;
+ padding: 10px;
+}
+
+.owner_detail{
+  height: 50px;
+  text-align: center;
+  padding-top: 6px;
 }
 
 .owner_details{
- background-color: bisque;
- height: 250px;
- margin-bottom: 500px;
+
+  display: grid;
+  grid-template-columns: 220px 200px 1fr;
+  margin-left: 10px;
 }
+
+.owner_img{
+  background-color: fuchsia;
+  height: 200px;
+  width: 200px;
+}
+
+.contact_info{
+  display: flex;
+  flex-direction: column;
+  background-color: darkgoldenrod;
+  gap: 2px;
+}
+
+.contact_info .ownerdetails_template{
+  display: flex;
+  background-color: aquamarine;
+  height: 100%;
+  justify-content: space-around;
+}
+
+/* .ownerdetails_template:first-child,.ownerdetails_template:last-child{
+  background-color: rgb(159, 20, 103);
+} */
+
+.contact_no,.gmail,.Properties_no,.Localities{
+  background-color: blue;
+  width: 200px;
+  display: flex;
+}
+
+.data_icons{
+  width: 60px;
+  height: 100%;
+  background-color: brown;
+}
+
+.data_conatiner{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.container3{
+  height: 400px;
+  background-color: rgb(29, 91, 146);
+  display: flex;
+  /* grid-template-columns: minmax(300px,500px), 1fr; */
+}
+
+.container3 .mapcontainer{
+  background-color: aliceblue;
+  flex: 1;
+}
+
+.container3 .complete_details_container{
+  flex: 1;
+}
+
+.about_us{
+  height: 400px;
+  background-color: blue;
+}
+
+
