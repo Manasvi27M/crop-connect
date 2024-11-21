@@ -118,18 +118,19 @@
   border-bottom: 2px solid black;
 }
 
-.cart-container{
-  margin-top: 30px;
-  display: flex;
-  justify-content: center;
-}
 
-.cart-container .addtocart-button{
-  padding: 8px 50px;
-  border-radius: 10px;
+
+.view_more{
+  height: 45px;
+  width: 200px;
+  border-radius: 25px;
   border: none;
   background-color: var(--primary-button);
   color: var(--primary-txt);
+  margin-top: 20px;
+  margin-left: 30px;
+  padding-top: 10px;
+  text-align: center;
 }
 
 .filter-container{
