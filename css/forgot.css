@@ -4,28 +4,25 @@ body, h1, p {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-body {
+/* body {
   background-color: #efeff3;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-}
+} */
 
 body {
   font-family: 'Arial', sans-serif;
-  background: url('la.webp');
+  background: url('../img/login_background.jpg');
   background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #a8ed88;
+  backdrop-filter: brightness(65%);
 }
 
-.container {
-  background-color: rgba(59, 205, 30, 0.829);
-}
 
 .login {
   background-color: rgb(255, 255, 255,0.3);
@@ -34,8 +31,8 @@ body {
   padding: 30px;
   width: 320px; 
   text-align: center;
-  
 }
+
 
 
 h1 {
@@ -47,7 +44,7 @@ h1 {
 
 p {
   font-size: 15px;
-  color: #243010ff;
+  color: black;
   margin-bottom: 25px;
 }
 
@@ -108,8 +105,8 @@ input[type="email"]:focus {
   margin-bottom: 15px;
 }
 
-.btn:hover {
-  background-color: #006400;
+.button:hover {
+  background-color: rgb(6, 50, 8);
 }
 
 .back-login {
@@ -117,12 +114,12 @@ input[type="email"]:focus {
 }
 
 .back-login p {
-  color: #243010ff;
+  color: black;
   font-size: 14px;
 }
 
 .back-login a {
-  color: #243010ff;
+  color: black;
   text-decoration: none;
   transition: text-decoration 0.3s;
 }

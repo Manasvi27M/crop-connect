@@ -80,7 +80,12 @@
   }
   .rightheader :last-child
   {
-    margin: 0px 16px 0px 18px;
+    margin: 0px 26px 0px 10px;
+  }
+
+  .rightheader svg
+  {
+    padding-top: 3px;
   }
 
   .container img,svg{
