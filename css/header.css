@@ -4,6 +4,13 @@
     box-sizing: border-box;
     
   }
+
+  /* .skiptranslate{
+    display: none;
+  } */
+
+
+
   .fullcontainer
   {
     background-color: #D7FDC4;
@@ -13,6 +20,11 @@
     right:0;
     z-index: 999;
   }
+
+  /* .fullcontainer.hide_googletranslate{
+    top: 40px;
+  } */
+
   a
   {
     text-decoration: none;
