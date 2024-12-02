@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crop - Connect</title>
+  <!-- <link rel="stylesheet" href="/css/styles.css"> -->
+  <link rel="stylesheet" href="/css/Prental.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" 
+  integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" 
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <header class="header_container">
+
+    </header>
+
+    <div class="container1">
+      <div class="filter-container">
+        <h2>Filter</h2>
+        <form id="filterForm">
+          <label for="location">Location :</label>
+          <select id="location" name="location">
+            <option value="">Select Location</option>
+            <option value="bengaluru">bengaluru</option>
+            <option value="tumkur">tumkur</option>
+            <option value="hassan">hassan</option>
+            <option value="chikamagaluru">chikamagaluru</option>
+          </select>
+
+          <label>Price Range :</label>
+          <div class="min-max-container">
+            <div class="input-field">
+              <div class="min">min</div>
+              <input type="number" value="200">
+            </div>
+            <div class="middle">-</div>
+            <div class="input-field">
+              <div class="max">max</div>
+              <input type="number" value="900">
+            </div>
+          </div>
+          <div class="slider">
+            <div class="progress"></div>
+          </div>
+          <div class="range-container">
+            <input class="min" type="range" max="50" value="1000">
+            <input class="max" type="range" max="50 value="3900">
+          </div>
+
+         
+
+          <label for="type">Product Type :</label>
+          <select id="type" name="type">
+            <option value="">Any</option>
+            <option value="Packed snacks">Packed snacks</option>
+            <option value="Dairy product">Dairy product</option>
+            <option value="Honey">Honey</option>
+            <option value="Fresh friuts">Fresh friuts</option>
+          </select>
+
+          <button class="filter-button" type="button" onclick="filterLands()">Filter</button>
+        </form>
+      </div>
+        <div class="main-Product-container">
+          <div class="Product-container">
+            <div class="Product-name">Honey</div>
+            <div class="product-details-container">
+              <div class="Product-image"><img src="https://marshallshoney.com/wp-content/uploads/2024/01/IMG_5442-e1706733651807.jpg" alt=""></div>
+              <div class="abstract-details-container">
+                <div class="data" id="data1">
+                  <div>
+                    <p>Quantity</p>
+                    <p class="Quantity">1 Kg</p>
+                  </div>
+                  <div>
+                    <p>location</p>
+                    <p>Chikamagaluru</p>
+                  </div>
+                </div>
+                <div class="data">
+                  <div>   
+                    <p>Packed on </p>
+                    <p>mar 2024 </p>
+                    
+                  </div>
+                  <div>
+                    <p>Best Before</p>
+                    <p>6 month</p>
+                  </div>
+                </div>
+                <div class="cart-container">
+                  <button class="addtocart-button">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="Product-container">
+            <div class="Product-name">Chips</div>
+            <div class="product-details-container">
+              <div class="Product-image"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtjGOwSuMO4FKG8ebxfNtpwtlqnl6NJMw5Yg&s" alt=""></div>
+              <div class="abstract-details-container">
+                <div class="data" id="data1">
+                  <div>
+                    <p>Quantity</p>
+                    <p class="Quantity">500 gm</p>
+                  </div>
+                  <div>
+                    <p>location</p>
+                    <p>bengaluru</p>
+                  </div>
+                </div>
+                <div class="data">
+                  <div>   
+                    <p>Packed on </p>
+                    <p>Jan 2024 </p>
+                  </div>
+                  <div>
+                    <p>Best Before</p>
+                    <p>12 month</p>
+                  </div>
+                </div>
+                <div class="cart-container">
+                  <button class="addtocart-button">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="Product-container">
+            <div class="Product-name">Mixer</div>
+            <div class="product-details-container">
+              <div class="Product-image"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRG-A38riUTBYwixVn9sOGVAyr_JFJ7NjhFpQ&s" alt=""></div>
+              <div class="abstract-details-container">
+                <div class="data" id="data1">
+                  <div>
+                    <p>Quantity</p>
+                    <p class="Quantity">250 gm</p>
+                  </div>
+                  <div>
+                    <p>location</p>
+                    <p>Tumkur</p>
+                  </div>
+                </div>
+                <div class="data">
+                  <div>   
+                    <p>Packed on </p>
+                    <p>Sep 2024 </p>
+                  </div>
+                  <div>
+                    <p>Best Before</p>
+                    <p>8 month</p>
+                  </div>
+                </div>
+                <div class="cart-container">
+                  <button class="addtocart-button">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="Product-container">
+            <div class="Product-name">Peach friut</div>
+            <div class="product-details-container">
+              <div class="Product-image"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHN7B3MY2pBlvBUF9GBkHvPtgkpsjGO9J1dg&s" alt=""></div>
+              <div class="abstract-details-container">
+                <div class="data" id="data1">
+                  <div>
+                    <p>Quantity</p>
+                    <p class="Quantity">5 Kg</p>
+                  </div>
+                  <div>
+                    <p>location</p>
+                    <p>Hassan</p>
+                  </div>
+                </div>
+                <div class="data">
+                  <div>   
+                    <p>Packed on </p>
+                    <p>Feb 2024 </p>
+                  </div>
+                  <div>
+                    <p>Best Before</p>
+                    <p>6 month</p>
+                  </div>
+                </div>
+                <div class="cart-container">
+                  <button class="addtocart-button">Add to Cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    
+
+ 
