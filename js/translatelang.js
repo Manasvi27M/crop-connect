@@ -3,7 +3,7 @@ function googleTranslateElementInit() {
         pageLanguage: 'en',
         layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL,
         autoDisplay: false,
-        includedLanguages: 'fr,de,es,kn,en,hi', // Add languages you want to support
+        includedLanguages: 'es,kn,en,hi,tcy', // Add languages you want to support
     }, 'google_translate_element');
 }
 
@@ -42,17 +42,63 @@ function googleTranslateElementInit() {
 
 
 
-// let translate_element=document.querySelector('.js_translatelang');
-// let header_element=document.querySelector('.fullcontainer');
+
 // let filter_element=document.querySelector('.filter-container');
 
 // function adjust_header()
 // {
+//     // console.log(translate_element);
 //     header_element.classList.add('hide_googletranslate');
-//     filter_element.classList.add('adjust_filter');
+//     // filter_element.classList.add('adjust_filter');
 // }
 
-// translate_element.addEventListener('click',()=>{
-//     adjust_header();
-// });
+// function adjust_header1(){
+//     header_element.classList.remove('hide_googletranslate');
+//     // filter_element.classList.remove('adjust_filter');
+// }
+let translate_element=document.querySelector('.js_translatelang');
+let header_element=document.querySelector('.fullcontainer');
+translate_element.addEventListener('click',()=>{
+    let langDropdown = document.querySelector('.goog-te-combo'); // Select the entire dropdown
+    
+    if (langDropdown) {
+        // Listen for the 'change' event on the dropdown
+        langDropdown.addEventListener('change', (event) => {
 
+            header_element.style.top=40+'px';
+
+             let close_element=document.querySelector('VIpgJd-ZVi9od-ORHb-OEVmcd skiptranslate');
+            // console.log(close_element);
+        });
+    }
+});
+
+
+
+// close_element.addEventListener('click',()=>{
+//     adjust_header1();
+//     console.log('hello');
+// });
+   // let langoption=document.querySelectorAll('.goog-te-combo');
+    // //console.log(langoption);
+
+    // langoption.forEach((langop,index)=>{
+    //     //console.log(langop , index);
+    //     if(index!==0){
+    //         let langopelem=langop;
+    //         console.log(langopelem);
+    //         langopelem.addEventListener('change',()=>{
+    //             console.log('hrllo');
+    //         })
+    //     }
+    // })
+    // langoption.addEventListener('click',()=>{
+    //     console.log();
+    // })
+    // langoption.forEach((langoption_elem)=>{
+        // let langop=langoption_elem;
+        
+        // langoption.addEventListener('change',()=>{
+        //     console.log('hello');
+        //     // adjust_header();
+        // })

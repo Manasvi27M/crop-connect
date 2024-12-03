@@ -9,7 +9,9 @@
     display: none;
   } */
 
-
+/* .VIpgJd-ZVi9od-ORHb{
+  opacity: 0;
+} */
 
   .fullcontainer
   {
@@ -21,9 +23,7 @@
     z-index: 999;
   }
 
-  /* .fullcontainer.hide_googletranslate{
-    top: 40px;
-  } */
+
 
   a
   {
