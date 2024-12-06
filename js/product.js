@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-    // Select all product elements
     const products = document.querySelectorAll(".product");
 
     products.forEach((product) => {
@@ -8,17 +7,14 @@ document.addEventListener("DOMContentLoaded", () => {
         let currentRating = 0;
 
         stars.forEach((star, index) => {
-            // Highlight stars on hover
             star.addEventListener("mouseover", () => {
                 highlightStars(index, stars);
             });
 
-            // Reset stars when hover ends
             star.addEventListener("mouseout", () => {
                 resetStars(stars, currentRating);
             });
 
-            // Set the rating when clicked
             star.addEventListener("click", () => {
                 setRating(index + 1, stars, ratingDisplay);
             });
@@ -47,9 +43,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-
-
-// Example: Add 'Add to Wishlist' functionality
 document.querySelectorAll('.add-to-wishlist').forEach((button) => {
     button.addEventListener('click', () => {
         button.textContent = "Added to Wishlist";

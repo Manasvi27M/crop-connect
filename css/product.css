@@ -92,7 +92,7 @@
   
   .price {
     font-size: 1.2em;
-    color: #2e8b57; /* Green color to match the fresh produce theme */
+    color: #2e8b57; 
     font-weight: bold;
     margin-top: 10px;
   }
@@ -115,7 +115,7 @@
   .star:hover,
   .star.hovered,
   .star.selected {
-    color: #f4b400; /* Golden color on hover or selection */
+    color: #f4b400; 
   }
   
   .rating-value {
