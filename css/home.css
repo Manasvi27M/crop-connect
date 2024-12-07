@@ -99,7 +99,9 @@ header
   background: linear-gradient(to right, rgb(44, 59, 19) ,#627a29ff);
   /* color: transparent; */
   -webkit-text-fill-color: transparent; 
-  -webkit-background-clip: text; 
+  -webkit-background-clip: text;
+  background-clip: text;
+
 }
 
 .connect{
@@ -107,6 +109,7 @@ header
   /* color: transparent; */
   -webkit-text-fill-color: transparent; 
   -webkit-background-clip: text; 
+  background-clip: text;
 }
 
 .tagline{
